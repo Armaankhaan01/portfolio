@@ -93,7 +93,6 @@ main {
 
 /** Images */
 img {
-    max-width: 80vw;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -136,6 +135,12 @@ a:hover {
 #about-container {
     display: flex;
     flex-direction: row;
+}
+
+#about-avatar {
+    max-width: 500px;
+    padding-left: 20px;
+    margin-top: 6px;
 }
 
 /** Wrapper */
@@ -339,11 +344,13 @@ a:hover {
     #about-container {
         flex-direction: column-reverse;
 
+
     }
 
     #about-avatar {
         width: 100%;
         padding-bottom: 30px;
+        padding-left: 0;
         margin-top: 6px;
     }
 }
@@ -392,47 +399,6 @@ a:hover {
     line-height: 1;
 }
 
-@media screen and (max-width: 800px) {
-    .post-title {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: 30px;
-}
-
-.post-content h2 {
-    font-size: 32px;
-}
-
-@media screen and (max-width: 800px) {
-    .post-content h2 {
-        font-size: 28px;
-    }
-}
-
-.post-content h3 {
-    font-size: 26px;
-}
-
-@media screen and (max-width: 800px) {
-    .post-content h3 {
-        font-size: 22px;
-    }
-}
-
-.post-content h4 {
-    font-size: 20px;
-}
-
-@media screen and (max-width: 800px) {
-    .post-content h4 {
-        font-size: 18px;
-    }
-}
-
-
 h1 {
     font-weight: 600;
 }
@@ -463,22 +429,12 @@ h4 {
 }
 
 
-
-#about-avatar {
-    width: 500px;
-    padding-left: 20px;
-    margin-top: 6px;
-}
-
 #projects-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-.project-spacer {
-    width: 40px;
+    gap: 8px;
 }
 
 .project-item {
@@ -597,6 +553,7 @@ h4 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-item {
@@ -667,6 +624,52 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #1756a9;
 }
+
+
+
+@media screen and (max-width: 800px) {
+    .post-title {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: 30px;
+}
+
+.post-content h2 {
+    font-size: 32px;
+}
+
+.post-content h3 {
+    font-size: 26px;
+}
+
+.post-content h4 {
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .post-content h2 {
+        font-size: 28px;
+    }
+
+    .post-content h3 {
+        font-size: 22px;
+    }
+
+    .post-content h4 {
+        font-size: 18px;
+    }
+
+
+    #projects-container {
+        flex-wrap: wrap;
+    }
+}
+
 
 
 /*# sourceMappingURL=main.css.map */
